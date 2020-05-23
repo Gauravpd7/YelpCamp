@@ -17,7 +17,7 @@ var commentRoutes    = require('./routes/comments'),
 	campgroundRoutes = require('./routes/campgrounds'),
 	indexRoutes      = require('./routes/index')
 
-mongoose.connect("mongodb+srv://gauravpd7:Bloodsucker@c1@cluster0-qim5j.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true,useFindAndModify: false});
+mongoose.connect("mongodb+srv://gauravpd7:Bloodsucker@c1@cluster0-qim5j.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true,useFindAndModify: false, useUnifiedTopology: true});
 //Bloodsucker@c1
 //mongodb+srv://gauravpd7:<password>@cluster0-qim5j.mongodb.net/test?retryWrites=true&w=majority
 
