@@ -9,8 +9,8 @@ router.get("/",(req,res)=>{
 });
 
 //show register form
-router.get("/register",(req,res)=>{
-	res.render("register");
+router.get("/register", function(req, res){
+   res.render("register", {page: 'register'}); 
 });
 //handle signup logic
 router.post("/register",(req,res)=>{
@@ -28,8 +28,8 @@ router.post("/register",(req,res)=>{
 	});
 });
 //login
-router.get("/login",(req,res)=>{
-	res.render("login");
+router.get("/login", function(req, res){
+   res.render("login", {page: 'login'}); 
 });
 router.post("/login",passport.authenticate("local",{
 	successRedirect: "/campgrounds",
